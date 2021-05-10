@@ -396,7 +396,9 @@ char *api_request(char *endpoint, char *post_data)
 int _tmain(int argc, _TCHAR* argv[])
 {
 	while(1){
-	printf("%s", api_request((char*)"/info/balance", (char*)"xcoin=1&currency=btc") );
+	// printf("%s", api_request((char*)"/info/balance", (char*)"xcoin=1&currency=mvc") );
+	// 
+	printf("%s", api_request((char*)"/public/ticker", (char*)"order_currency=mvc&payment_currency=krw") );
 	//xcoin api request example : (char*)"xcoin=1&currency=btc"
 	}
 
